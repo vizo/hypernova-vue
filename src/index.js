@@ -1,11 +1,12 @@
 import vue from 'vue';
-import { createRenderer } from 'vue-server-renderer';
 import hypernova, { serialize, load } from 'hypernova';
 
 export const Vue = vue;
 
 export const renderVue = (name, Component) => hypernova({
   server() {
+    const createRenderer = require('vue-server-renderer').createRenderer;
+    
     return async (propsData) => {
       const vm = new Component({
         propsData,

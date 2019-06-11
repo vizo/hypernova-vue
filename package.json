@@ -2,7 +2,7 @@
   "name": "hypernova-vue",
   "version": "2.0.0",
   "description": "Vue bindings for Hypernova",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "author": "Felipe Guizar Diaz <felipegaiacharly@gmail.com>",
   "scripts": {
     "prepublish": "npm run build",
